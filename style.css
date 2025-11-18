@@ -1,0 +1,245 @@
+/* --- RESET E BASICO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222;
+    color: aliceblue;
+    /* Fonte moderna */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* --- CABEÇALHO (CORRIGIDO) --- */
+header {
+    display: flex;
+    justify-content: space-between; /* Separa H1 e Menu */
+    align-items: center;
+    
+    padding: 20px 40px;
+    background-color: #333;
+    border-bottom: 2px solid #0076f4;
+
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+h1 {
+    color: #8ea5df; /* Cor azul clara para destacar no fundo escuro */
+    font-size: 1.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s; /* Adicionado o 's' de segundos */
+}
+
+nav a:hover {
+    color: #0076f4;
+}
+
+/* --- GERAL --- */
+main {
+    padding-top: 20px;
+}
+
+section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0076f4; /* Azul vibrante */
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/* --- SEÇÃO SOBRE --- */
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conjunto */
+    gap: 50px;
+}
+
+#sobre img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; /* Redondo perfeito */
+    border: 4px solid #0076f4;
+    object-fit: cover; /* Evita distorção */
+    box-shadow: 0 0 20px rgba(0, 118, 244, 0.5); /* Brilho azul */
+}
+
+#sobre p {
+    font-size: 1.2em;
+    max-width: 500px;
+}
+
+/* --- NOVA SEÇÃO: HABILIDADES (SKILLS) --- */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    border: 1px solid #444;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    background-color: #162c62;
+    border-color: #0076f4;
+}
+
+.skill-card i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #0076f4;
+}
+
+/* --- SEÇÃO PROJETOS --- */
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha se a tela for pequena */
+    justify-content: center;
+    gap: 30px;
+}
+
+.projetos-container div {
+    background-color: #162c62;
+    border: 1px solid #0076f4;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projetos-container div:hover {
+    transform: translateY(-10px); /* Sobe ao passar o mouse */
+    box-shadow: 0 10px 20px rgba(0, 118, 244, 0.4); /* Sombra azulada */
+}
+
+.projetos-container h3 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.projetos-container a {
+    display: inline-block;
+    background-color: #8ea5df;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Corrigido typo blackground */
+}
+
+.projetos-container a:hover {
+    background-color: #fff;
+}
+
+/* --- SEÇÃO CONTATO (LADO A LADO) --- */
+.contato-container {
+    display: flex;
+    justify-content: space-between; /* Separa as colunas */
+    gap: 40px;
+}
+
+.form-contato {
+    flex: 1; /* Ocupa metade */
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.links-diretos {
+    flex: 1; /* Ocupa a outra metade */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilos do Formulário */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+}
+
+button {
+    background-color: #0076f4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #005ec2;
+}
+
+/* Botão WhatsApp */
+.botao-whatsapp {
+    background-color: #25D366;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.social-link {
+    display: block;
+    margin-bottom: 10px;
+    color: #8ea5df;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+    background-color: #111;
+    color: #888;
+}
