@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MEU PORTIFÓLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>PORTIFÓLIO DA ANNA</h1>
+        <nav> 
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#skills">Habilidades</a> <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+        <div class="conteudo-sobre">
+            <h2>Sobre Mim</h2>
+            <p>Olá, me chamo Anna! Sou desenvolvedora Fullstack, apaixonada por transformar café em código e formada em Análise e Desenvolvimento de Sistemas.</p>
+            
+            <a href="anna_curriculo.pdf" target="_blank" class="botao-curriculo">
+                Ver Currículo <i class="fas fa-file-alt"></i> 
+            </a>
+
+        </div>
+        <img src="ChatGPT Image 12 de nov. de 2025, 09_17_11.png" alt="Foto da Anna"> 
+    </section>
+        <section id="skills">
+            <h2>Minhas Habilidades</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL</h3>
+                </div>
+            </div>
+        </section>
+        <section id="projetos">
+            <h2>Meus Projetos</h2>
+            
+            <div class="projetos-container">
+                <div>
+                    <h3>RPG DE TEXTO</h3>
+                    <p>Um jogo interativo onde suas escolhas mudam a história. Feito com lógica complexa de JS.</p>
+                    <a href="https://annavitoriavds.github.io/RPG---TEXTO/" target="_blank">Ver projeto</a>
+                </div>
+
+                <div>
+                    <h3>Calculadora JS</h3>
+                    <p>Uma calculadora funcional moderna com histórico de operações.</p>
+                    <a href="#" target="_blank">Ver projeto</a>
+                </div>
+
+                <div>
+                    <h3>Landing Page</h3>
+                    <p>Página de vendas de alta conversão totalmente responsiva.</p>
+                    <a href="#" target="_blank">Ver projeto</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Vamos conversar?</h2>
+            
+            <div class="contato-container">
+                <div class="form-contato">
+                    <p>Me envie uma mensagem!</p>
+                    <form onsubmit="enviarParaWhatsapp(event)">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                        <button type="submit">Enviar mensagem</button>
+                        
+    
+    </form>
+                    </form>
+                </div>
+
+               <div class="links-diretos">
+    <p>Ou me encontre nas redes:</p> 
+    <a href="https://www.linkedin.com/in/anna-vit%C3%B3ria-viana-4581021ab/" target="_blank" class="social-link">
+       <i class="fab fa-linkedin"></i> LinkedIn 
+    </a>
+    <a href="https://github.com/AnnaVitoriavds" target="_blank" class="social-link">
+      <i class="fab fa-github"></i>  Github 
+    </a>
+
+    <p class="texto-whats">Mensagem rápida:</p>
+    <a href="https://api.whatsapp.com/send?phone=5561981227067&text=Ol%C3%A1%21" target="_blank" class="botao-whatsapp">
+       <i class="fab fa-whatsapp"></i> Chamar no WhatsApp 
+    </a>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - Desenvolvido por Anna Vitória</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
